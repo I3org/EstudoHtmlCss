@@ -8,12 +8,12 @@
     padding: 0;
 }
 
-body{
+
+body {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
+    flex-direction: column; 
+    align-items: center; 
+    height: 100vh; 
     background-color: #000000;
     color: #F6F6F6;
     background-color: gray;
@@ -25,11 +25,13 @@ body{
     align-items: center;
     margin-top: 20px; 
     margin-bottom: 20px;
+    padding: 2%;
 }
 
-.apresentacao__conteudo{
-    width: 1000px;
+.apresentacao__conteudo {
+    margin: 0 auto;
 }
+
 
 .apresentacao__conteudo__titulo{
     font-size: 42px;
@@ -45,8 +47,9 @@ body{
 
 .apresentacao__botoes{
     display: flex;
-    justify-content: space-between;
-    margin: 9%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2%;
 }
 
 
@@ -60,4 +63,8 @@ body{
     font-size: 20px;
     text-decoration: none;
     font-family: 'Krona One', sans-serif
+}
+
+img{
+    padding-right: 2%;
 }
