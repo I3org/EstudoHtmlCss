@@ -20,25 +20,12 @@ body{
     color: #FFC94A;
 }
 
-.linkLinke{
-    color: #e6e6e6;  
-}
-
-.linkGit{
-    color: #000000;  
-}
-
 .apresentacao {
     display: flex;
     align-items: center;
-    margin-top: 20px; /* Adicione margem superior */
-    margin-bottom: 20px; /* Adicione margem inferior */
+    margin-top: 20px; 
+    margin-bottom: 20px;
 }
-
-.imagem-container {
-    margin: 0 10%; /* Margem de 5% da largura do contêiner pai */
-}
-
 
 .apresentacao__conteudo{
     width: 1000px;
@@ -56,9 +43,21 @@ body{
     font-style: normal;
 }
 
-/* 
-span{
-    color: #4839ca;
-    border: 1px solid #4839ca;
-    padding: 10px;
-} */
+.apresentacao__botoes{
+    display: flex;
+    justify-content: space-between;
+    margin: 9%;
+}
+
+
+.apresentacao__botoes__link{
+    background-color: #F6F6F6 ; 
+    color: #000000;  
+    width: 200px;
+    padding: 6%;
+    text-align: center ;
+    border-radius: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Krona One', sans-serif
+}
