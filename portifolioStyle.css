@@ -1,70 +1,92 @@
+/* Importando fontes */
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Jersey+25&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
-*{
+/* Reset de estilos */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Adicionado para melhorar o box model */
 }
 
-
+/* Estilos gerais */
 body {
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    height: 100vh; 
-    background-color: #000000;
-    color: #F6F6F6;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
     background-color: gray;
     color: #FFC94A;
+    font-family: 'Poppins', sans-serif; /* Adicionado uma fonte padrão */
 }
 
+/* Estilos para a seção de apresentação */
 .apresentacao {
     display: flex;
+    flex-direction: column; /* Alterado para empilhar os elementos verticalmente */
     align-items: center;
-    margin-top: 20px; 
-    margin-bottom: 20px;
+    margin: 20px;
     padding: 2%;
+    text-align: center; /* Adicionado para centralizar o texto */
 }
 
 .apresentacao__conteudo {
-    margin: 0 auto;
+    margin: 20px auto; /* Centraliza o conteúdo horizontalmente */
 }
 
-
-.apresentacao__conteudo__titulo{
-    font-size: 42px;
+.apresentacao__conteudo__titulo {
+    font-size: 3rem; /* Alterado para tamanho relativo */
     font-family: 'Krona One', sans-serif;
+    margin-bottom: 10px; /* Adicionado espaço entre o título e o parágrafo */
 }
 
-.apresentacao__conteudo__paragrafo{
-    font-size: 36px;
+.apresentacao__conteudo__paragrafo {
+    font-size: 2.5rem; /* Alterado para tamanho relativo */
     font-family: "Jersey 25", sans-serif;
     font-weight: 400;
     font-style: normal;
+    margin-bottom: 20px; /* Adicionado espaço entre o parágrafo e os botões */
 }
 
-.apresentacao__botoes{
+/* Estilos para os botões */
+.apresentacao__botoes {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 2%;
+    flex-wrap: wrap; /* Adicionado para os botões quebrarem para uma nova linha em telas menores */
+    justify-content: center; /* Centraliza os botões */
+    gap: 10px; /* Adiciona espaço entre os botões */
 }
 
-
-.apresentacao__botoes__link{
-    background-color: #F6F6F6 ; 
-    color: #000000;  
-    width: 200px;
-    padding: 6%;
-    text-align: center ;
+.apresentacao__botoes__link {
+    background-color: #F6F6F6;
+    color: #000000;
+    padding: 15px 30px; /* Alterado para tamanho relativo */
+    text-align: center;
     border-radius: 20px;
-    font-size: 20px;
+    font-size: 1.5rem; /* Alterado para tamanho relativo */
     text-decoration: none;
-    font-family: 'Krona One', sans-serif
+    font-family: 'Krona One', sans-serif;
 }
 
-img{
-    padding-right: 2%;
+/* Estilos para imagens */
+img {
+    max-width: 100%; /* Garante que as imagens não ultrapassem o tamanho do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 20px; /* Adicionado espaço abaixo da imagem */
+}
+
+/* Media query para telas menores, como dispositivos móveis */
+@media screen and (max-width: 768px) {
+    .apresentacao {
+        margin: 10px;
+    }
+    .apresentacao__conteudo__titulo {
+        font-size: 2.5rem;
+    }
+    .apresentacao__conteudo__paragrafo {
+        font-size: 2rem;
+    }
+    .apresentacao__botoes__link {
+        padding: 12px 24px;
+        font-size: 1.3rem;
+    }
 }
